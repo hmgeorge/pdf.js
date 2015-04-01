@@ -382,7 +382,7 @@ var CanvasExtraState = (function CanvasExtraStateClosure() {
     this.textRenderingMode = TextRenderingMode.FILL;
     this.textRise = 0;
     // Default fore and background colors
-    this.fillColor = '#000000';
+    this.fillColor = '#d3d3d3';
     this.strokeColor = '#000000';
     this.patternFill = false;
     // Note: fill alpha applies to all non-stroking operations
@@ -721,7 +721,7 @@ var CanvasGraphics = (function CanvasGraphicsClosure() {
       } else {
         this.ctx.mozOpaque = true;
         this.ctx.save();
-        this.ctx.fillStyle = 'rgb(255, 255, 255)';
+        this.ctx.fillStyle = 'rgb(211, 211, 211)'; //'rgb(255, 255, 255)';
         this.ctx.fillRect(0, 0, width, height);
         this.ctx.restore();
       }
@@ -1575,7 +1575,7 @@ var CanvasGraphics = (function CanvasGraphicsClosure() {
     setFillRGBColor: function CanvasGraphics_setFillRGBColor(r, g, b) {
       var color = Util.makeCssRgb(r, g, b);
       this.ctx.fillStyle = color;
-      this.current.fillColor = color;
+      this.current.fillColor = '#d3d3d3';
       this.current.patternFill = false;
     },
 

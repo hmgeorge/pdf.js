@@ -282,6 +282,7 @@ var WebGLUtils = (function WebGLUtilsClosure() {
   }
 
   function drawFigures(width, height, backgroundColor, figures, context) {
+    backgroundColor = [211, 211, 211]
     if (!figuresCache) {
       initFiguresGL();
     }

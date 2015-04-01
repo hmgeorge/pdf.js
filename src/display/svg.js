@@ -23,7 +23,7 @@
 var SVG_DEFAULTS = {
   fontStyle: 'normal',
   fontWeight: 'normal',
-  fillColor: '#000000'
+  fillColor: '#d3d3d3'
 };
 
 var convertImgDataToPng = (function convertImgDataToPngClosure() {
